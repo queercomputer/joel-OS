@@ -106,8 +106,6 @@ h1 {
 
   /* north west to south east */
   cursor: nwse-resize;
-
-  /* background-color: red; */
 }
 
 .pane.is-dragging .title {
