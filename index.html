@@ -1,72 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
+    <title>joelOS</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
+    <header>
+      <h1>joelOS</h1>
+    </header>
 
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
+    <div class="pane" style="left: calc(50vw - 400px); top: calc(50vh - 280px)">
+      <div class="title">
+        <h2>Doodle #1</h2>
       </div>
+
+      <div class="content">
+        <img src="https://cdn.glitch.global/0a0c95cc-3cf0-47ee-9600-c81e849b1d60/RO283379-R1-12-24A.JPG?v=1691833794005" alt="Doodle #1" />
+      </div>
+
+      <div class="corner"></div>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
+
+    <div class="pane" style="left: calc(50vw + 80px); top: calc(50vh - 120px)">
+      <div class="title">
+        <h2>Doodle #2</h2>
+      </div>
+
+      <div class="content">
+        <img src="https://cdn.glitch.global/0a0c95cc-3cf0-47ee-9600-c81e849b1d60/RO283379-R1-29-1A.JPG?v=1691833800471" alt="Doodle #2" />
+      </div>
+
+      <div class="corner"></div>
+    </div>
+
+    <div class="pane" style="left: calc(50vw - 50px); top: calc(50vh - 320px)">
+      <div class="title">
+        <h2>Doodle #3</h2>
+      </div>
+
+      <div class="content">
+        <img src="https://cdn.glitch.global/0a0c95cc-3cf0-47ee-9600-c81e849b1d60/RO283379-R1-21-9A.JPG?v=1691833814621" alt="Doodle #3" />
+      </div>
+
+      <div class="corner"></div>
+    </div>
+
+    <div class="pane" style="left: calc(50vw - 160px); top: calc(50vh - 200px)">
+      <div class="title">
+        <h2>Doodle #4</h2>
+      </div>
+
+      <div class="content">
+        <img src="https://cdn.glitch.global/0a0c95cc-3cf0-47ee-9600-c81e849b1d60/RO283379-R1-10-26A.JPG?v=1691833830211" alt="Doodle #4" />
+      </div>
+
+      <div class="corner"></div>
+    </div>
+
+    <div class="pane" style="left: calc(50vw - 320px); top: calc(50vh - 80px)">
+      <div class="title">
+        <h2>Doodle #5</h2>
+      </div>
+
+      <div class="content">
+        <img src="https://cdn.glitch.global/0a0c95cc-3cf0-47ee-9600-c81e849b1d60/RO283379-R1-08-28A.JPG?v=1691833837156" alt="Doodle #5" />
+      </div>
+
+      <div class="corner"></div>
+    </div>
+
+    <script src="panes.js"></script>
   </body>
 </html>
