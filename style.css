@@ -29,12 +29,17 @@
 
 body {
   font-family: 'Xanh Mono', monospace;
-  background-image: url("assets/bliss-update.jpg");
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   height: 100vh;
   overflow: clip;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("assets/bliss-update.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 h1 {
