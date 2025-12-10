@@ -29,9 +29,9 @@
 
 body {
   font-family: 'Xanh Mono', monospace;
-  background: var(--desktop-color);
-
-  /* if outside of the window, clip */
+  background-image: url("assets/bliss-update.jpg");
+  background-position: top;
+  background-attachment: fixed;
   height: 100vh;
   overflow: clip;
 }
