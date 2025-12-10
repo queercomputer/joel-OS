@@ -78,6 +78,9 @@ h1 {
 .pane .content {
   position: relative;
   background-color: var(--pane-content-background-color);
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* make image fill the space */
@@ -110,4 +113,58 @@ h1 {
 
 .pane.is-dragging .title {
   background-color: var(--title-bar-highlight-color);
+}
+
+@media (max-width: 850px) {
+  body {
+    height: auto;       /* allow page to grow vertically */
+    overflow: auto;     /* enable normal scrolling */
+  }
+
+  .pane {
+    position: static;   /* ignore the left/top inline styles */
+    width: 320px;        /* full-width column */
+    height: auto;       /* let height be based on content */
+    margin: 0 auto 20px;
+  }
+
+  .pane .content {
+    max-height: none;   /* remove fixed-ish constraints */
+    overflow-y: visible;
+  }
+
+  /* optional: make the image behave better in stacked layout */
+  .pane .content img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    height: auto;       /* allow page to grow vertically */
+    overflow: auto;     /* enable normal scrolling */
+  }
+
+  .pane {
+    position: static;   /* ignore the left/top inline styles */
+    width: 420px;        /* full-width column */
+    height: auto;       /* let height be based on content */
+    margin: 0 auto 20px;
+  }
+
+  .pane .content {
+    max-height: none;   /* remove fixed-ish constraints */
+    overflow-y: visible;
+  }
+
+  /* optional: make the image behave better in stacked layout */
+  .pane .content img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
