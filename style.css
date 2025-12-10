@@ -37,6 +37,14 @@ body {
   overflow: clip;
 }
 
+/* For iOS devices */
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-attachment: scroll; /* Or 'auto' */
+        background-size: cover; /* Or specific size */
+    }
+}
+
 h1 {
   color: var(--desktop-text-color);
   padding: 32px;
