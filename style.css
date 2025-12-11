@@ -199,13 +199,11 @@ h1 {
 
   .pane .content {
     max-height: none;   
-    overflow-y: visible;
+    overflow-y: hidden;
   }
 
   .pane .content img {
     position: relative;
-    width: 100%;
-    height: auto;
     object-fit: contain;
   }
 
@@ -234,11 +232,11 @@ h1 {
 
   .pane .content {
     max-height: none;   /* remove fixed-ish constraints */
-    overflow-y: visible;
+    overflow-y: hidden;
   }
 
   /* optional: make the image behave better in stacked layout */
-  .pane .content img {
+  .headshot {
     position: relative;
     width: 100%;
     height: auto;
