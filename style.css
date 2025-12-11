@@ -1,16 +1,15 @@
-/* load google font */
+
 @font-face {
   font-family: 'Xanh Mono';
   src: url(XanhMono-Regular.ttf);
 }
 
-/* reset defaults */
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-/* css variables */
 :root {
   --desktop-color: blue;
   --desktop-text-color: #ffffff;
@@ -38,7 +37,6 @@ body {
   overflow: clip;
 }
 
-/* For iOS devices */
 @supports (-webkit-touch-callout: none) {
     body {
         background-attachment: scroll;
@@ -93,7 +91,7 @@ h1 {
   overflow-x: hidden;
 }
 
-/* make image fill the space */
+
 .pane .content img {
   position: absolute;
   top: 0;
@@ -109,15 +107,13 @@ h1 {
   user-drag: none;
 }
 
-/* add a corner in bottom right */
+
 .pane .corner {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 24px;
   height: 24px;
-
-  /* north west to south east */
   cursor: nwse-resize;
 }
 
@@ -151,9 +147,9 @@ h1 {
 }
 
 .icon img {
-  width: 48px;   /* adjust to your icon */
+  width: 48px;   
   height: 48px;
-  image-rendering: pixelated; /* if you want the crunchy look */
+  image-rendering: pixelated; 
 }
 
 .icon span {
@@ -172,12 +168,12 @@ h1 {
 }
 
 .desktop-icon img {
-  width: 48px;   /* or 32px, match your asset */
+  width: 48px;   
   height: 48px;
   image-rendering: pixelated;
 }
 
-/* position the trash in a corner */
+
 .desktop-icon.trash {
   bottom: 20px;
   right: 20px;
@@ -186,14 +182,14 @@ h1 {
 
 @media (max-width: 850px) {
   body {
-    height: auto;       /* allow page to grow vertically */
-    overflow: auto;     /* enable normal scrolling */
+    height: auto;     
+    overflow: auto;     
   }
 
   .pane {
-    position: static;   /* ignore the left/top inline styles */
-    width: 420px;        /* full-width column */
-    height: auto;       /* let height be based on content */
+    position: static;   
+    width: 420px;        
+    height: auto;      
     margin: 0 auto 20px;
   }
 
@@ -219,23 +215,22 @@ h1 {
 
 @media (max-width: 650px) {
   body {
-    height: auto;       /* allow page to grow vertically */
-    overflow: auto;     /* enable normal scrolling */
+    height: auto;      
+    overflow: auto;    
   }
 
   .pane {
-    position: static;   /* ignore the left/top inline styles */
-    width: 320px;        /* full-width column */
-    height: auto;       /* let height be based on content */
+    position: static;  
+    width: 320px;    
+    height: auto;      
     margin: 0 auto 20px;
   }
 
   .pane .content {
-    max-height: none;   /* remove fixed-ish constraints */
+    max-height: none;  
     overflow-y: hidden;
   }
 
-  /* optional: make the image behave better in stacked layout */
   .headshot {
     position: relative;
     width: 100%;
