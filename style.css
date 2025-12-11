@@ -139,17 +139,21 @@ h1 {
   }
 
   .pane .content {
-    max-height: none;   /* remove fixed-ish constraints */
+    max-height: none;   
     overflow-y: visible;
   }
 
-  /* optional: make the image behave better in stacked layout */
   .pane .content img {
     position: relative;
     width: 100%;
     height: auto;
     object-fit: contain;
   }
+
+  .panes {
+    margin-bottom: 100px;
+  }
+
 }
 
 @media (max-width: 650px) {
