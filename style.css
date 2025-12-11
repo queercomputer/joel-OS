@@ -29,10 +29,10 @@
 
 body {
   font-family: 'Xanh Mono', monospace;
-  background-image: url("assets/bliss-update.jpg");
+  background-image: url("assets/sky.png");
   background-position: top;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
   height: 100vh;
   overflow: clip;
@@ -41,8 +41,8 @@ body {
 /* For iOS devices */
 @supports (-webkit-touch-callout: none) {
     body {
-        background-attachment: scroll; /* Or 'auto' */
-        background-size: cover; /* Or specific size */
+        background-attachment: scroll;
+        background-size: cover;
     }
 }
 
