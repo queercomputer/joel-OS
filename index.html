@@ -84,12 +84,11 @@ You can also find me on Bluesky: <a href="https://bsky.app/profile/joel.queercom
     <button type="button" class="close" aria-label="Close">×</button>
   </div>
       <div class="content cv-viewer-content">
-  <div class="pdf-toolbar">
-    <button type="button" class="pdf-btn" id="pdf-zoom-out">−</button>
-    <span id="pdf-zoom-label">100%</span>
-    <button type="button" class="pdf-btn" id="pdf-zoom-in">+</button>
-    <a class="pdf-download" href="assets/joel_humphries_cv_2025.pdf" target="_blank" rel="noopener">Open</a>
-  </div>
+  <iframe
+    src="https://joelhumphries.com.au/assets/joel_humphries_cv_2025.pdf"
+    title="CV PDF"
+  ></iframe>
+</div>
 
   <div id="pdf-container"></div>
 </div>
@@ -113,12 +112,6 @@ You can also find me on Bluesky: <a href="https://bsky.app/profile/joel.queercom
 
  
 </div>
-
-<script src="assets/pdfjs/pdf.js"></script>
-<script>
-  pdfjsLib.GlobalWorkerOptions.workerSrc =
-    "assets/pdfjs/pdf.worker.js";
-</script>
 
 <script src="panes.js"></script>
 
