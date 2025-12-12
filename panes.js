@@ -85,7 +85,7 @@ panes.forEach((pane) => {
   if (!openBtn || !cvPane || !closeBtn || !pdfContainer) return;
 
   let pdfDoc = null;
-  let zoom = 1.2;
+  let zoom = 0.6;
   let rendering = false;
 
   function setZoomLabel() {
