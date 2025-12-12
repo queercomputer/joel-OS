@@ -137,25 +137,6 @@ h1 {
   object-fit: contain;
 }
 
-.icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #000;
-  gap: 4px;
-}
-
-.icon img {
-  width: 48px;   
-  height: 48px;
-  image-rendering: pixelated; 
-}
-
-.icon span {
-  font-size: 0.75rem;
-  text-align: center;
-}
 
 .desktop-icon {
   position: absolute;
@@ -180,7 +161,6 @@ h1 {
 }
 
 .pane-hidden { display: none; }
-.pane-visible { display: grid; }
 
 .pane .title { position: relative; }
 
@@ -207,15 +187,7 @@ h1 {
   display: block;
 }
 
-/* IMPORTANT: stop your global .pane .content img rule affecting the file icon */
-.icon img {
-  position: static;
-  width: 48px;
-  height: 48px;
-  max-width: none;
-  max-height: none;
-  object-fit: contain;
-}
+
 
 /* make the icon button look like your old link */
 .icon {
@@ -233,50 +205,6 @@ h1 {
   height: 100%;
 }
 
-.cv-viewer-content {
-  padding: 0;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100%;
-}
-
-.pdf-toolbar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 8px;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
-  background: #eee;
-}
-
-.pdf-btn {
-  width: 32px;
-  height: 28px;
-  border: 1px solid rgba(0,0,0,0.25);
-  background: #fff;
-  cursor: pointer;
-  font: inherit;
-}
-
-.pdf-download {
-  margin-left: auto;
-  font-size: 0.85rem;
-  color: #000;
-  text-decoration: none;
-}
-
-#pdf-container {
-  overflow: auto;
-  background: #777;       /* like a PDF viewer */
-  padding: 16px 0;
-}
-
-#pdf-container canvas {
-  display: block;
-  margin: 0 auto 16px;
-  background: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-}
 
 @media (max-width: 850px) {
   body {
