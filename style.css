@@ -1,10 +1,4 @@
 
-@font-face {
-  font-family: 'Xanh Mono';
-  src: url(XanhMono-Regular.ttf);
-}
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,12 +36,6 @@ body {
         background-attachment: scroll;
         background-size: cover;
     }
-}
-
-h1 {
-  color: var(--desktop-text-color);
-  padding: 32px;
-  font-size: 1.5rem;
 }
 
 .pane {
@@ -137,6 +125,11 @@ h1 {
   object-fit: contain;
 }
 
+span {
+  font-size: 12px;
+  font-family: 'Xanh Mono', monospace;
+}
+
 
 .desktop-icon {
   position: absolute;
@@ -160,50 +153,17 @@ h1 {
   right: 20px;
 }
 
-.pane-hidden { display: none; }
 
-.pane .title { position: relative; }
-
-.pane .title .close {
-  position: absolute;
-  right: 8px;
-  top: 0;
-  height: var(--title-bar-height);
-  width: 32px;
-  border: 0;
-  background: transparent;
-  font: inherit;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.cv-viewer-content { padding: 0; }
-
-.cv-viewer-content iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-}
-
-
-
-/* make the icon button look like your old link */
 .icon {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  display: flex;
+display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
   color: #000;
+  text-decoration: none;
 }
 
-#cv-viewer .content {
-  height: 100%;
-}
+
 
 
 @media (max-width: 850px) {

@@ -50,21 +50,3 @@ panes.forEach(pane => {
     document.addEventListener("mouseup", stop);
   });
 });
-
-// CV open / close
-(() => {
-  const openBtn = document.getElementById("open-cv");
-  const cvPane = document.getElementById("cv-viewer");
-  const closeBtn = cvPane?.querySelector(".close");
-
-  if (!openBtn || !cvPane || !closeBtn) return;
-
-  openBtn.addEventListener("click", () => {
-    cvPane.classList.remove("pane-hidden");
-    cvPane.style.zIndex = ++z;
-  });
-
-  closeBtn.addEventListener("click", () => {
-    cvPane.classList.add("pane-hidden");
-  });
-})();
