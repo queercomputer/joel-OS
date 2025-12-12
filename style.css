@@ -111,7 +111,18 @@ body {
 
 .cv-content {
   display: flex;
-  padding: 30px;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 30px;
+  gap: 12px;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.cv-meta {
+  font-size: 12px;
+  margin-top:auto;
+  margin-left: -25px;
 }
 
 .cv-content .icon img {
